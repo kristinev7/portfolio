@@ -1,0 +1,90 @@
+/* Base styles */
+.navbar-container {
+  width: 100%;
+  max-width: 1440px;
+  height: 79px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* Adjust border color and transparency */
+}
+
+/* Adding blur effect to the border */
+.navbar-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  /* Height of the border line */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Adjust border color and transparency */
+  backdrop-filter: blur(5px);
+  /* Adjust the blur intensity as needed */
+  z-index: 1;
+  /* Ensure it stays above other content */
+}
+
+.nav-name {
+  /* Align the nav name to the left */
+  flex-shrink: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Default background for nav-links */
+.nav-links {
+  background-color: transparent;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    /* Initial background color for mobile view */
+    width: 150px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: white;
+  }
+
+  /* Styles for changing the background color when menu is open */
+  .nav-links.open {
+    display: flex;
+    color: white;
+    background: linear-gradient(to top, #1a202c, #759F9C); ;
+    /* background color */
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+#about-section {
+  padding: 0 1rem;
+  max-width: 900px; /* example max-width to center content on larger screens*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  #about-section {
+    padding: 0 2rem;
+  }
+}
+
+#about-section h1, #about-section p {
+  text-align: left;
+  margin: 0 auto; /*center text container*/
+  padding-left: 1rem; /* Optional: padding to ensure indentation on all screen sizes */
+  max-width: 800px; /*prevent paragraphs from stretching too much*/
+  
+}
+
+@media (min-width: 768px) {
+  #about-section h1, #about-section p {
+    padding-left: 2rem;
+    /* Optional: increased padding for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  #about-section h1, #about-section p {
+    padding-left: 0; /*remove padding on larger screens*/
+  }
+}
