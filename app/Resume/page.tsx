@@ -4,11 +4,15 @@ export default function Resume() {
   return (
     <main className="flex justify-center p-4">
       <div className="bg-[#759F9C] rounded-lg p-4 text-black">
-        <p>I'm a software developer with experience in data science and web development.</p>
+        <p>I'm a software developer with experience in full stack developer and data science.</p>
         <br />
         <p>
           My main tech stack consists of Java, JavaScript, Nextjs and React,
           which I regularly use in my projects.
+        </p>
+        <br/>
+        <p>
+          Currently, I am interested and learning UI/UX Design for small devices. Specifically, designing user interfaces for wearables using Qt/QML and Garmin's SDK.
         </p>
         <br />
         <h2 className="font-extrabold text-black">Education</h2>
@@ -49,7 +53,7 @@ export default function Resume() {
         <br/>
         <div>
           <h2 className="font-extrabold">Current Pursuit</h2>
-          <p>AWS Certification Cloud Practitioner</p>
+          {/* <p>AWS Certification Cloud Practitioner</p> */}
           <p>CompTIA Security+</p>
           <br/>
         </div>
