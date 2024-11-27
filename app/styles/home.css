@@ -31,3 +31,21 @@
     padding-left: 0; /*remove padding on larger screens*/
   }
 }
+
+/* project page style */
+.relative {
+  perspective: 1000px; /* Enable 3D perspective for card flipping */
+}
+
+.shadow-lg {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rounded-lg {
+  border-radius: 8px;
+}
+
+.absolute {
+  transform-style: preserve-3d; /* Preserve 3D transforms */
+  backface-visibility: hidden; /* Hide back face during flipping */
+}

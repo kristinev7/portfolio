@@ -11,7 +11,7 @@ const tomorrow = Tomorrow({
 
 export const metadata: Metadata = {
   title: "Kristine Veneles",
-  description: "Portfolio using create next app",
+  description: "Portfolio using Nextjs",
 };
 
 export default function RootLayout({

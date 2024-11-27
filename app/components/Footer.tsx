@@ -13,9 +13,6 @@ export default function Footer() {
         <a href="https://www.linkedin.com/in/kristineveneles/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-2xl text-black dark:text-white" />
         </a>
-        <a href="mailto:kveneles@gmail.com">
-          <FaEnvelope className="text-2xl text-black dark:text-white" />
-        </a>
       </div>
       <div className="text-sm text-white dark:text-white">
         &copy; 2024 KrisV
