@@ -4,14 +4,14 @@ export default function Resume() {
   return (
     <main className="flex justify-center p-4">
       <div className="bg-[#759F9C] rounded-lg p-4 text-black">
-        <p>
-          I'm a software developer with experience in full stack developer and
-          data science.
-        </p>
+        <p>I'm a software developer with experience in data science.</p>
         <br />
         <p>
-          I mainly use Java and Spring for backend, however I've used PHP, JS and Python in previous works.<br/>
-          For frontend, I use Reactjs and Nextjs frameworks with GSAP for animation rendering. 
+          I use Java and Spring for backend, however I've used PHP, JS and
+          Python in previous works.
+          <br />
+          For frontend, I use React and Next.js frameworks with GSAP for
+          animation rendering.
         </p>
         <br />
         <h2 className="font-extrabold text-black">Education</h2>
@@ -35,14 +35,16 @@ export default function Resume() {
               Frameworks and Libraries
             </h3>
             <ul>
-              <li>React</li>
-              <li>NextJs</li>
               <li>Spring</li>
+              <li>React</li>
+              <li>Next.js</li>
               <li>Django</li>
             </ul>
           </div>
           <div className="bg-white rounded-lg p-4 flex-1 shadow">
-            <h3 className="text-xl font-semibold mb-2">Tools and Technologies</h3>
+            <h3 className="text-xl font-semibold mb-2">
+              Tools and Technologies
+            </h3>
             <ul>
               <li>Figma</li>
               <li>Git</li>
@@ -52,15 +54,11 @@ export default function Resume() {
           </div>
         </div>
         <br />
+        <h2 className="font-extrabold mb-2 text-lg">
+          Experience / Internships
+        </h2>
         <div>
-          <h2 className="font-extrabold">Current Pursuit</h2>
-          {/* <p>AWS Certification Cloud Practitioner</p> */}
-          <p>CompTIA Security+</p>
-          <br />
-        </div>
-        <h2 className="font-extrabold mb-2">Experience / Internships</h2>
-        <div>
-          <h2 className="font-semibold">Data Science Student Intern</h2>
+          <h2 className="italic">Data Science Student Intern</h2>
           <p>06/2022-08/2022</p>
           <ul>
             <li>
@@ -79,7 +77,7 @@ export default function Resume() {
         </div>
         <br />
         <div>
-          <h2 className="font-semibold">REU Student Researcher</h2>
+          <h2 className="italic">REU Student Researcher</h2>
           <p>06/2021-08/2021</p>
           <ul>
             <li>
@@ -95,7 +93,7 @@ export default function Resume() {
         </div>
         <br />
         <div>
-          <h2 className="font-semibold">Tutor</h2>
+          <h2 className="italic">Tutor</h2>
           <p>09/2022-12/2022</p>
           <ul>
             <li>
@@ -107,6 +105,13 @@ export default function Resume() {
               class projects.
             </li>
           </ul>
+        </div>
+        <br />
+        <div>
+          <h2 className="font-extrabold">Interests</h2>
+          <p>Computer Security using HackTheBox</p>
+          <p>Qt for GUI development</p>
+          <br />
         </div>
       </div>
     </main>

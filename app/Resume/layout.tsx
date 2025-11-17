@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const tomorrow = Tomorrow({
   subsets: ["latin"],
-  weight: ["400", "500", "400"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {

@@ -11,10 +11,14 @@ export const animatePageIn = () => {
     const tl = gsap.timeline()
 
     tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
+      display: "block",
       yPercent: 0,
     }).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
       yPercent: 100,
-      stagger: 0.2,
+      stagger: 0.02,
+      duration: 0.2,
+    }).set([bannerOne, bannerTwo, bannerThree, bannerFour], {
+      display: "none",
     })
   }
 }
@@ -29,6 +33,7 @@ export const animatePageOut = (href: string, router: AppRouterInstance) => {
     const tl = gsap.timeline()
 
     tl.set([bannerOne, bannerTwo, bannerThree, bannerFour], {
+      display: "block",
       yPercent: -100,
     }).to([bannerOne, bannerTwo, bannerThree, bannerFour], {
       yPercent: 0,

@@ -54,7 +54,7 @@ export default function Projects() {
 
   return (
     <main className="flex flex-col items-center min-h-screen">
-      <div className="font-extrabold text-center mb-10 mt-20">
+      <div className="font-extrabold text-center mb-10 mt-20 text-white">
         Flip Between Projects
       </div>
       <div className="relative w-64 h-64">
