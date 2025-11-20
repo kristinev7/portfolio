@@ -75,6 +75,14 @@ Preferred communication style: Simple, everyday language.
 - Centralized animation functions in utils/animations.tsx
 - Timeline-based animations using GSAP for sequential effects
 
+## Hosting Configuration
+
+**Development Server**
+- Next.js dev server configured to bind to `0.0.0.0` (all network interfaces) instead of localhost
+- Required for external access in Replit's cloud environment
+- Configured via `next dev -H 0.0.0.0` flag in package.json dev script
+- Runs on port 5000 with webview output for live preview
+
 ## External Dependencies
 
 ### Core Framework
