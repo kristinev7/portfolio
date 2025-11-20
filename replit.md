@@ -80,8 +80,9 @@ Preferred communication style: Simple, everyday language.
 **Development Server**
 - Next.js dev server configured to bind to `0.0.0.0` (all network interfaces) instead of localhost
 - Required for external access in Replit's cloud environment
-- Configured via `next dev -H 0.0.0.0` flag in package.json dev script
-- Runs on port 5000 with webview output for live preview
+- Configured via `next dev -H 0.0.0.0 -p 5000` flag in package.json dev script
+- Always runs on port 5000 with webview output for live preview
+- Port 5000 is consistently used whether starting via Run button or workflow
 
 ## External Dependencies
 
