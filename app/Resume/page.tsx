@@ -7,8 +7,7 @@ export default function Resume() {
         <p>I'm a software developer with experience in data science.</p>
         <br />
         <p>
-          I use Java and Spring for backend, however I've used PHP, JS and
-          Python in previous works.
+          I use Java and Spring for backend, however I've used PHP, JS in previous works.
           <br />
           For frontend, I use React and Next.js frameworks with GSAP for
           animation rendering.

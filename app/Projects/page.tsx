@@ -6,17 +6,22 @@ import { gsap } from "gsap";
 
 export default function Projects() {
   const cardsData = [
-    { name: "Monty Hall Problem", 
-      description: "A web app in Reactjs to simulate the Monty Hall Problem , a probability puzzle, enhancing proficiency in JavaScript and modern web development.",         link: "https://monty-hall-problem.replit.app/" 
+    {
+      name: "Monty Hall Problem",
+      description:
+        "A web app in Reactjs to simulate the Monty Hall Problem , a probability puzzle, enhancing proficiency in JavaScript and modern web development.",
+      link: "https://monty-hall-problem.replit.app/",
     },
-    { name: "Flux Endeavor", 
-      description: "A text-based adventure game in Java to strengthen understanding of Object-Oriented Programming (OOP) principles.", 
-      link: "https://github.com/kristinev7/FluxEndeavor/blob/main/ReadMe.md"
+    // { name: "Flux Endeavor",
+    //   description: "A text-based adventure game in Java to strengthen understanding of Object-Oriented Programming (OOP) principles.",
+    //   link: "https://github.com/kristinev7/FluxEndeavor/blob/main/ReadMe.md"
+    // },
+    {
+      name: "Data Visualization",
+      description:
+        "A website developed using HTML, Bootstrap, JavaScript, SVG, Google Charts, jQuery, PHP, and MySQL, reading from a database holding NFL, population, and baseball data, with different charts displayed for each dataset.",
+      link: "https://github.com/kristinev7/DataVisualization",
     },
-    { name: "Data Visualization", 
-      description: "A website developed using HTML, Bootstrap, JavaScript, SVG, Google Charts, jQuery, PHP, and MySQL, reading from a database holding NFL, population, and baseball data, with different charts displayed for each dataset.", 
-      link: "https://github.com/kristinev7/DataVisualization" 
-    }
   ];
 
   const [currentCard, setCurrentCard] = useState(0);
@@ -29,26 +34,25 @@ export default function Projects() {
       duration: 0.5,
       onComplete: () => {
         // Update the card index after flipping out
-        setCurrentCard(nextIndex); 
-        
+        setCurrentCard(nextIndex);
+
         // Animate in (new card flips in from -90 degrees)
         gsap.fromTo(
           cardRef.current,
           { rotationY: -90 },
-          { rotationY: 0, duration: 0.5 }
+          { rotationY: 0, duration: 0.5 },
         );
       },
     });
   };
 
   const handleNext = () => {
-    const nextIndex = (currentCard + 1) % cardsData.length; 
+    const nextIndex = (currentCard + 1) % cardsData.length;
     flipCard(nextIndex);
   };
 
   const handlePrev = () => {
-    const prevIndex =
-      (currentCard - 1 + cardsData.length) % cardsData.length; 
+    const prevIndex = (currentCard - 1 + cardsData.length) % cardsData.length;
     flipCard(prevIndex);
   };
 
@@ -76,7 +80,7 @@ export default function Projects() {
         >
           Previous
         </button>
-        
+
         <button
           onClick={handleNext}
           className="bg-gray-800 text-white px-4 py-2 rounded"
@@ -87,45 +91,3 @@ export default function Projects() {
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

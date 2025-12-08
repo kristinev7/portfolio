@@ -16,8 +16,8 @@ export const animatePageIn = () => {
     })
       .to([bannerOne, bannerTwo, bannerThree, bannerFour], {
         yPercent: 100,
-        stagger: 0.02,
-        duration: 0.2,
+        stagger: 0.1,
+        duration: 0.5,
       })
       .set([bannerOne, bannerTwo, bannerThree, bannerFour], {
         display: "none",
