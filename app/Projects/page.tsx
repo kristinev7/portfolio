@@ -12,10 +12,12 @@ export default function Projects() {
         "A web app in Reactjs to simulate the Monty Hall Problem , a probability puzzle, enhancing proficiency in JavaScript and modern web development.",
       link: "https://monty-hall-problem.replit.app/",
     },
-    // { name: "Flux Endeavor",
-    //   description: "A text-based adventure game in Java to strengthen understanding of Object-Oriented Programming (OOP) principles.",
-    //   link: "https://github.com/kristinev7/FluxEndeavor/blob/main/ReadMe.md"
-    // },
+    {
+      name: "Employee Management App",
+      description:
+        "Employee Management App built with Expo (React Native) and a Spring Boot/MySQL backend, providing full CRUD operations for employees.",
+      link: "https://github.com/kristinev7/EmployeeManagementApp",
+    },
     {
       name: "Data Visualization",
       description:
